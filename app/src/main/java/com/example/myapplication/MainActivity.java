@@ -11,12 +11,11 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
+
 import android.widget.Button;
-import android.widget.EditText;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button ReG =  findViewById(R.id.B2);
+        Button ReG = findViewById(R.id.B2);
         ReG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MainActivity.this,numberlogin.class);
+                Intent i = new Intent(MainActivity.this, numberlogin.class);
                 startActivity(i);
             }
         });
